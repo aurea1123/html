@@ -1,65 +1,289 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
-	<style>
-		.tcenter{
-		padding: 10px;
-		text-align:center;
-		}
+	<head>
+	<title>Musica libre</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>	
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="bootstrap.min.js"></script>
+		<script type="text/javascript">
+			//Este script tiene que funcionar
+        
+        jQuery("h1").mouseenter(function (e) {             
+            var posMouse = e.pageX - this.offsetLeft; 
+            var textoTooltip = jQuery(this).attr("mos"); 
+			
+            if (textoTooltip.length > 0) {
+                jQuery(this).append('<div class="tooltip">' + textoTooltip + '</div>');
+                jQuery("h1 > div.tooltip").css("left", "" + posMouse - 103 + "px");
+                jQuery("h1 > div.tooltip").fadeIn(300);
+            }
+        });
+        jQuery("h1").mouseleave(function () {             
+            jQuery("h1 > div.tooltip").fadeOut(300).delay(300).queue(function () {
+                jQuery(this).remove();
+                jQuery(this).dequeue();
+            });
+        });
+        //este es para contar visitas
+function getexpirydate( nodays){
+var UTCstring;
+Today = new Date();
+nomilli=Date.parse(Today);
+Today.setTime(nomilli+nodays*24*60*60*1000);
+UTCstring = Today.toUTCString();
+return UTCstring;
+}
+function getcookie(cookiename) {
+ var cookiestring=""+document.cookie;
+ var index1=cookiestring.indexOf(cookiename);
+ if (index1==-1 || cookiename=="") return "";
+ var index2=cookiestring.indexOf(';',index1);
+ if (index2==-1) index2=cookiestring.length;
+ return unescape(cookiestring.substring(index1+cookiename.length+1,index2));
+}
+function setcookie(name,value,duration){
+cookiestring=name+"="+escape(value)+";EXPIRES="+getexpirydate(duration);
+document.cookie=cookiestring;
+if(!getcookie(name)){
+return false;
+}
+else{
+return true;
+}
+}
+//este es para hacer lo de la cancion
+function cancion(n){
+var nom = ["musica/musica.mp3", "http://musicalibre.es/DESCARGAS/LML3/JordiMela/IsaacNewton/JordiMela_IsaacNewton_8_Withoutwomen.mp3"]
+if(n < 2){
+var rep=document.getElementById("controles");
+rep.src=nom[n];
+rep.play();
+}else{
+alert("Error:     kñasdjfñaskdf");
+}
+}
+    </script>
+		<!-- este es un archivo de audio i video de bitcoin i copyleft -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<header>
+<p><h1 mos="Bienvendio a musicalibre">
+<img src="http://www.musicalibre.es/images/musicalibre_pajaro.png" style="display: inline-block;">
 
-		a:link {
-		text-decoration:none;
-		}
+				
+		Musica libre</h1>
+		<div class="form">
+		usario 	
+		<textarea></textarea>password <textarea></textarea><input type="button" name="entrar" title="Entrar">
+	</div>
+		</p>
+		<div id="header">
+			<ul class="nav">
+				<li><a href="Inicio.html">Inicio</a></li>
+				<li><a href="Soft.html">Software</a>
+					<ul>
+						
+						<li><a href="linux.html">linux</a></li>
+						<li><a href="Widows.html">Windows</a></li>
+				
+						</li>
+					</ul>
+				</li>
+				<li><a href="Rincones.html">Rincones</a></li>
+								
+				<li><a href="Contacto.html">Contacto</a></li>
+			</ul>
+		</div>
+		<br>
+		<br>
+		<br>
+	</header>
+	<body>
+		<nav>
+			<p>
+			<h3>Musica</h3>
+		</p>
+		<p>
+			Buscador Musica
+		</p>
+		<p>
+			Eventos Musicales
+		</p>
+		<p>
+			Valora la música
+		</p>
+		<p>
+			Videos musicales
+		</p>
+		<p>
+			Tu radio online
+		</p>
+		<h3>Colabora</h3>
+		<p>
+			Direccion Bitcon
+		</p>
+		<h3>"La direccion"</h3>
+		<div class="banner">
+				baner
+			</div>
+		</nav>
+		
+			<p>
+			<div id="header">
+			<ul class="nav">
+				<li><a href="#">Navegador</a></li>
 
-		.green, .green a {
-		color: #339900;
-		}
-	</style>
-	<script src="js/jquery.js"></script>
-	<script src="js/app.js"></script>
-</head>
-<body>
-	<audio id="player">
-	</audio>
+					<li><a href="#">Buscar</a></li>
+	
 
-<div class="container">
+					<li><a href="#">Funcion aleatira</a></li>
 
-	<div class="row">
 
-		<h2 align="center">Reproductor HTML5</h2>
+					<li><a href="#">Comunidad</a></li>
+			
+			</ul>
+			</p>
+		</div>
+		<article>
+			<div class="cont_products">
+			<div class="product">
+				<p>Que guay es todo</p>
 
-		<div class="col-md-6 col-md-offset-3">
+			<div class="Descripocion">
+				Algo muy raro
+			</div>
+				<a href="#" onclick="cancion(1)">Reproductor interno</a>
+			</p>
+			<p>
+				<a href="http://musicalibre.es/netjuke/play.php?do=play_all&random=0&type=al&id=755" target="_blank">Reproductor externo</a> 
+			</div>
+			<div class="product">
+				<p>
+					Pop-rock
+					<div class="Descripocion">
+				Derrape
+			</div>
+			<a href="#" onclick="cancion(0)">Reproductor interno</a>
+			</p>
+			<p>
+				<a href="http://musicalibre.es/netjuke/play.php?do=play&val=3953" target="_blank">Reproductor externo</a> 
+				</p>
+			</div>
+		<div class="product">
+				<p>
+					Ska-p
+				</p>
+				<div class="Descripocion">
+					Lista porpia
+				</div>
+				<a href="#" onclick="cancion(0)">Reproductor interno</a>
+			</p>
+			<p>
+				<a href="http://musicalibre.es/netjuke/play.php?do=play_all&random=0&type=ar&id=787" target="_blank">Reproductor externo</a> 
+			</div>
+			<div class="product">
+				<p>
+					Alternativo
+				</p>
+				<div class="Descripocion">
+					Lista porpia
+				</div>
+				<a href="#" onclick="cancion(0)">Reproductor interno</a>
+			</p>
+			<p>
+				<a href="http://musicalibre.es/netjuke/play.php?do=play_all&random=0&type=ge&subs=1&id=277" target="_blank">Reproductor externo</a> 
+			</div>
+			<div class="product">
+				<p>
+					Mas ska-p
+				</p>
+				<a href="#" onclick="cancion(0)">Reproductor interno</a>
+			</p>
+			<p>
+				<a href="http://musicalibre.es/netjuke/play.php?do=play_all&random=0&type=ge&id=464&subs=1" target="_blank">Reproductor externo</a> 
+			</div>
+			<div class="product">
+				<p>
+					Todas las canciones
+				</p>
+				<a href="#" onclick="cancion(0)">Reproductor interno</a>
+			</p>
+			<p>
+				<a href="http://musicalibre.es/netjuke/play.php?do=play_all&random=0&type=all" target="_blank">Reproductor externo</a> 
+			</div>
+			<div class="product">
+				<p>
+					Acustico (34)
+				</p>
+				<a href="#" onclick="cancion(0)">Reproductor interno</a>
+			</p>
+			<p>
+				<a href="http://musicalibre.es/netjuke/play.php?do=play_all&random=0&type=all" target="_blank">Reproductor externo</a> 
+			</div>
 
-			<div class="tcenter">
-				<img src="https://cdn1.iconfinder.com/data/icons/IMPRESSIONS/multimedia/png/128/audio_speakers.png" alt="">
-				<img src="https://cdn1.iconfinder.com/data/icons/MediaPack_ICON/256/TV.png" alt="">         
-				<img src="https://cdn1.iconfinder.com/data/icons/IMPRESSIONS/multimedia/png/128/audio_speakers.png" alt="">
-			</div> <!-- /.tcenter -->
+			<div class="product">
+				<p>
+					Acustico (34)
+				</p>
+				<p>
+				<a href="#" onclick="cancion(0)">Reproductor interno</a>
+			</p>
+			<p>
+				<a href="http://musicalibre.es/netjuke/play.php?do=play_all&random=0&type=all" target="_blank">Reproductor externo</a> 
+			</div>
+			<div class="product">
+				<p>
+					Acustico (34)
+				</p>
+			</div>
+			<div class="product">
+				<p>
+					Acustico (34)
+				</p>
+			</div>
+			<div class="product">
+				<p>
+					Acustico (34)
+				</p>
+			</div>
+			<div class="product">
+				<p>
+					Acustico (34)
+				</p>
+			</div>
+			<div class="product">
+				<p>
+					Acustico (34)
+				</p>
+			</div>
+		</div>
+		</article>
+		<aside>
+			<h3>
+				usarios online
+			</h3>
+			<p>
+			
+<script language="javascript">
+count= getcookie("counter");
+if(isNaN(count)){
+y=setcookie('counter',0,1);
+count=0;
+}
+count++;
+document.write("   "+count+ " usarios onilne");
+y=setcookie('counter',count,1);
+// fin de obtencion de cookie
+// -->
+</script>
+<audio controls="true" id="controles"/ style="align-items: center;
+ margin: 0px;">
+		</p>
+		</aside>
 
-			<div class="tcenter">
-				<a href="javascript:backSong();" class="btn btn-default"><i class="glyphicon glyphicon-backward"></i></a>
-				<a href="javascript:player.load();" class="btn btn-default"><i class="glyphicon glyphicon-stop"></i></a>
-				<a href="javascript:player.play();" class="btn btn-default"><i class="glyphicon glyphicon-play"></i></a>
-				<a href="javascript:player.pause();" class="btn btn-default"><i class="glyphicon glyphicon-pause"></i></a>
-				<a href="javascript:nextSong();" class="btn btn-default"><i class="glyphicon glyphicon-forward"></i></a>
-			</div> <!-- /.tcenter -->
-
-			<div class="tcenter">
-				<a href="javascript:player.volume-=(player.volume<=0 ? 0:0.1)" class="btn btn-default"><i class="glyphicon glyphicon-volume-down"></i></a> 
-				<a href="javascript:player.volume+=(player.volume==1 ? 0:0.1)" class="btn btn-default"><i class="glyphicon glyphicon-volume-up"></i></a>  
-				<a href="javascript:player.muted=(player.muted ? false:true)" class="btn btn-default"><i class="glyphicon glyphicon-volume-off"></i></a> 
-				<hr>
-			</div> <!-- /.tcenter -->
-
-		</div> <!-- /.col-mid -->
-
-	</div> <!-- /.row -->
-
-</div> <!-- /.container -->
-</body>
-</html>
+		</body>
+		<footer>
+			<a href="#">Mail</a>
+			<a href="#">Twiter</a>
+			<a href="#">paguinas amigas</a>
+		</footer>
+<html>
