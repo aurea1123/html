@@ -1,0 +1,113 @@
+<html>
+	<head>
+	<title>Musica libre</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>	
+		<script type="text/javascript">
+			//Este script tiene que funcionar
+        
+        jQuery("h1").mouseenter(function (e) {             
+            var posMouse = e.pageX - this.offsetLeft; 
+            var textoTooltip = jQuery(this).attr("mos"); 
+			
+            if (textoTooltip.length > 0) {
+                jQuery(this).append('<div class="tooltip">' + textoTooltip + '</div>');
+                jQuery("h1 > div.tooltip").css("left", "" + posMouse - 103 + "px");
+                jQuery("h1 > div.tooltip").fadeIn(300);
+            }
+        });
+
+        jQuery("h1").mouseleave(function () {             
+            jQuery("h1 > div.tooltip").fadeOut(300).delay(300).queue(function () {
+                jQuery(this).remove();
+                jQuery(this).dequeue();
+            });
+        });
+    </script>
+		<!-- este es un archivo de audio i video de bitcoin i copyleft -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<header>
+<p><h1 mos="Bienvendio a musicalibre">
+<img src="http://www.musicalibre.es/images/musicalibre_pajaro.png" style="display: inline-block;">
+
+				
+		Musica libre</h1>
+		<div class="form">
+		usario 	
+		<textarea></textarea>password <textarea></textarea><input type="button" name="entrar" title="Entrar">
+	</div>
+		</p>
+		<div id="header">
+			<ul class="nav">
+				<li><a href="Inicio.html">Inicio</a></li>
+				<li><a href="Soft.html">Software</a>
+					<ul>
+						
+						<li><a href="linux.html">linux</a></li>
+						<li><a href="Widows.html">Windows</a></li>
+				
+						</li>
+					</ul>
+				</li>
+				<li><a href="Rincones.html">Rincones</a></li>
+								
+				<li><a href="Contacto.html">Contacto</a></li>
+			</ul>
+		</div>
+		<br>
+		<br>
+		<br>
+	</header>
+	<body>
+		<nav>
+		<p>
+			panel izquierdo
+		</p>
+		<p>
+			Panel iz izquierdo 2
+		</p>
+		<div class="banner">
+				baner
+			</div>
+		</nav>
+		
+			<p>
+			<div id="header">
+			<ul class="nav">
+				<li><a href="#">Navegador</a></li>
+
+					<li><a href="#">Buscar</a></li>
+	
+
+					<li><a href="#">Funcion aleatira</a></li>
+
+
+					<li><a href="#">Comunidad</a></li>
+			
+			</ul>
+			</p>
+		</div>
+		<article>
+			<div class="cont_products">
+			<div class="product">
+
+		</div>
+			<div class="product">
+				<p>
+					Articulo 2
+				</p>
+
+			</div>
+		</div>
+		</article>
+		<aside>
+			<p>
+			Panel derecho
+		</p>
+		</aside>
+
+		</body>
+		<footer>
+			Aqui estan las paguinas de la paguina
+		</footer>
+		<html>

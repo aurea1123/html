@@ -1,0 +1,145 @@
+header{
+				margin-left: 0px;
+				margin-top: 0px;
+			}
+			#header {
+				margin: auto;
+				width:500px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			body{
+			background: url("https://preview.ibb.co/kXwV3m/Sin_nombre.png");/*Esto se quita para editar para poder ver la estructura de html*/
+			}
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;s
+				top:0px;
+			}
+			p{
+			text-align: center;
+			color: white;
+			background-color:#000;
+			}
+			h1{
+			color: white;
+			background-color:#000;
+			display: inline-block;
+			}
+			img{
+			display: inline-block;
+			}
+			a{
+			text-align: center;
+			color: white;
+			background-color:#000;
+			}			
+			textarea{
+				height: 4%;
+			}
+			nav{
+				float: left;
+				width: 10%;
+			}
+			article{
+				float: none;
+				margin: 0px;
+				width: 60%;
+				position: relative;
+				display: inline-block;
+			}
+			aside{
+				float: right;
+				width: 10%;
+				margin: 0px;
+				position: relative;
+				vertical-align: top;
+				display: inline-block;
+			}
+			.cont_products { padding:1% 0 0 0; background-color: #00001; margin-bottom: 30%; overflow: hidden;
+			}
+			.product { 
+				width:30%;  float:right; margin:0 10px 10px 10px; text-align:center; min-height: 265px;
+			 background-image: url(https://pre00.deviantart.net/874d/th/pre/i/2016/232/c/1/music_by_riverspirit456-daellud.png);
+			 background-size: cover;/*Este es para poner el fonde de las imagunes*/
+			 position: relative;
+    		 box-shadow: 0px 4px 4px #1c1a19;
+    		 margin-bottom: 25px;
+    		 margin-top: 15px;
+   			 height: 200px;
+   			 border-radius: 5px;
+			}
+			.baner{
+				color: red;
+			}
+			.form{
+				background-color: yellow;
+				border: 1px solid black;
+				display: inline-block;
+				position: relative;
+				
+			}
+			h3{
+				background-color: 0000;
+				color: white;
+			}
+			footer{
+				margin: 0px;
+			}
+			.Descripocion{
+				background-color: #FFF;
+				color: black;
+			}
+			.mail{	width:30%;  float:right; margin:0 10px 10px 10px; text-align:center; min-height: 265px;
+			 background-image: url(https://img00.deviantart.net/27ea/i/2012/123/0/b/bottle_mail_ltd__sending_your_message_in_a_bottle_by_entangled_minds-d4yfqlt.png);
+			 background-size: cover;/*Este es para poner el fonde de las imagunes*/
+			 position: relative;
+    		 box-shadow: 0px 4px 4px #1c1a19;
+    		 margin-bottom: 25px;
+    		 margin-top: 15px;
+   			 height: 200px;
+   			 border-radius: 5px;
+			}
+			.gnu{
+				width:30%;  float:right; margin:0 10px 10px 10px; text-align:center; min-height: 265px;
+			 background-image: url(https://articles-images.sftcdn.net/wp-content/uploads/sites/2/2011/06/Software-Libre-GNU.jpg);
+			 background-size: 100% 100%;/*Este es para poner el fonde de las imagunes*/
+			 position: relative;
+    		 box-shadow: 0px 4px 4px #1c1a19;
+    		 margin-bottom: 25px;
+    		 margin-top: 15px;
+   			 height: 200px;
+   			 border-radius: 5px;
+			}

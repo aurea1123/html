@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+	<style>
+		.tcenter{
+		padding: 10px;
+		text-align:center;
+		}
+
+		a:link {
+		text-decoration:none;
+		}
+
+		.green, .green a {
+		color: #339900;
+		}
+	</style>
+	<script src="js/jquery.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body>
+	<audio id="player">
+	</audio>
+
+<div class="container">
+
+	<div class="row">
+
+		<h2 align="center">Reproductor HTML5</h2>
+
+		<div class="col-md-6 col-md-offset-3">
+
+			<div class="tcenter">
+				<img src="https://cdn1.iconfinder.com/data/icons/IMPRESSIONS/multimedia/png/128/audio_speakers.png" alt="">
+				<img src="https://cdn1.iconfinder.com/data/icons/MediaPack_ICON/256/TV.png" alt="">         
+				<img src="https://cdn1.iconfinder.com/data/icons/IMPRESSIONS/multimedia/png/128/audio_speakers.png" alt="">
+			</div> <!-- /.tcenter -->
+
+			<div class="tcenter">
+				<a href="javascript:backSong();" class="btn btn-default"><i class="glyphicon glyphicon-backward"></i></a>
+				<a href="javascript:player.load();" class="btn btn-default"><i class="glyphicon glyphicon-stop"></i></a>
+				<a href="javascript:player.play();" class="btn btn-default"><i class="glyphicon glyphicon-play"></i></a>
+				<a href="javascript:player.pause();" class="btn btn-default"><i class="glyphicon glyphicon-pause"></i></a>
+				<a href="javascript:nextSong();" class="btn btn-default"><i class="glyphicon glyphicon-forward"></i></a>
+			</div> <!-- /.tcenter -->
+
+			<div class="tcenter">
+				<a href="javascript:player.volume-=(player.volume<=0 ? 0:0.1)" class="btn btn-default"><i class="glyphicon glyphicon-volume-down"></i></a> 
+				<a href="javascript:player.volume+=(player.volume==1 ? 0:0.1)" class="btn btn-default"><i class="glyphicon glyphicon-volume-up"></i></a>  
+				<a href="javascript:player.muted=(player.muted ? false:true)" class="btn btn-default"><i class="glyphicon glyphicon-volume-off"></i></a> 
+				<hr>
+			</div> <!-- /.tcenter -->
+
+		</div> <!-- /.col-mid -->
+
+	</div> <!-- /.row -->
+
+</div> <!-- /.container -->
+</body>
+</html>

@@ -1,0 +1,46 @@
+{
+	"songs":[
+		{
+			"id":0,
+			"name":"Energy",
+			"artist":"Drake",
+			"song":"music/Drake-Energy.mp3",
+			"image":"img/drake.jpg"
+		},
+		{
+			"id":1,
+			"name":"Dejarse La Piel",
+			"artist":"El Chojin",
+			"song":"music/Chojin-Dejarse_La_Piel.mp3",
+			"image":"img/chojin.jpg"
+		},
+		{
+			"id":2,
+			"name":"Atiende",
+			"artist":"Hadrian",
+			"song":"music/HADRIAN-Atiende.mp3",
+			"image":"img/hadrian.jpg"
+		},
+		{
+			"id":3,
+			"name":"Crecí",
+			"artist":"Jaymvee",
+			"song":"music/JAYMVEE-CRECI.mp3",
+			"image":"img/jaymvee.jpg"
+		},
+		{
+			"id":4,
+			"name":"No me porto bien",
+			"artist":"La Banda Bastön",
+			"song":"music/Baston-No_Me_Porto_Bien.mp3",
+			"image":"img/banda-baston.jpg"
+		},
+		{
+			"id":5,
+			"name":"La vida es un Freestyle",
+			"artist":"Akapellah",
+			"song":"music/Akapellah-La_Vida_Es_Un_Freestyle.mp3",
+			"image":"img/akapellah.jpg"
+		}
+	]
+}
