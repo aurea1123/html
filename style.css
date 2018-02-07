@@ -1,12 +1,16 @@
 		header{
 				margin-left: 0px;
 				margin-top: 0px;
+				border: 1px solid red;
+				background-image: url("https://pre00.deviantart.net/57e8/th/pre/f/2013/056/5/8/the_universe_inn_you_by_matkraken-d5w77b1.jpg");
+				background-size:  100% 100%;
 			}
 			#header {
 				margin: 0 auto;
 				display: block;
 				margin-left: 30%;
 				font-family:Arial, Helvetica, sans-serif;
+
 			}
 			body{
 			background: url("https://preview.ibb.co/kXwV3m/Sin_nombre.png");/*Esto se quita para editar para poder ver la estructura de html*/
@@ -44,11 +48,11 @@
 			p{
 			text-align: center;
 			color: white;
-			background-color:#000;
+			background-color:#8696E8;
 			}
 			h1{
 			color: white;
-			background-color:#000;
+			background-color:#8696E8;
 			display: inline-block;
 			}
 			img{
@@ -57,7 +61,7 @@
 			a{
 			text-align: center;
 			color: white;
-			background-color:#000;
+			background-color:#8696E8;
 			}			
 			textarea{
 				height: 4%;
@@ -85,18 +89,18 @@
 				padding:1% 0 0 0; background-color: #00001; margin-bottom: 1%; overflow: hidden;
 			}
 			.product { 
-				width:30%;  float:right; margin:0 10px 10px 10px; text-align:center; min-height: 265px;
+				width:30%;  float:right; margin:0 1% 1% 1%; text-align:center; min-height: 2%;
 			 background-image: url(https://pre00.deviantart.net/874d/th/pre/i/2016/232/c/1/music_by_riverspirit456-daellud.png);
 			 background-size: cover;/*Este es para poner el fonde de las imagunes*/
 			 position: relative;
-    		 box-shadow: 0px 4px 4px #1c1a19;
-    		 margin-bottom: 25px;
-    		 margin-top: 15px;
-   			 height: 200px;
-   			 border-radius: 5px;
-   			 text-anchor: 0.01%;
+    		 box-shadow: 0% 4% 4% #1c1a19;
+    		 margin-bottom: 1%;
+    		 margin-top: 3%;
+   			 height: 50%;
+   			 border-radius: 10%;
+   			text-align: center;
    			 animation-duration: 3s;
-  				animation-name: slidein;
+  			animation-name: slidein;
   			animation-iteration-count: 1;
 			}
 			
@@ -148,8 +152,16 @@
 				margin-left: 44%;
 				display: block;
 			}
-	
-
+			.ban{
+				background-image: url("https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fx--lYlaJtag%2Fmaxresdefault.jpg&f=1");
+				background-size: 100% 100%;
+				height: 30%;
+			}
+			.git{
+				background-image: url("https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pngall.com%2Fwp-content%2Fuploads%2F2016%2F04%2FGithub-PNG-Image.png&f=1");
+				background-size: 100% 100%;
+				height: 20%;
+			}
 /* Animation */
 .anim-typewriter{
   animation: typewriter 4s steps(440) 1s 1 normal both,
