@@ -14,7 +14,7 @@
 
 			}
 			body{
-			background: url("https://github.com/aurea1123/html/blob/master/back.png");/*Esto se quita para editar para poder ver la estructura de html*/
+			background: url("back.png");/*Esto se quita para editar para poder ver la estructura de html*/
 			}
 			ul, ol {
 				list-style:none;
