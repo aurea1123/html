@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<body onMouseMove="c(event);">
+<style text="text/css">
+div.blo{
+  background-color: #000;
+width: 10px;
+height: 10px;
+display: inline-block;
+}
+p{
+  border: none;
+  margin: 0;
+}
+</style>
+<div id="cajas">cajas</div>
+<form id="frm1" action="/action_page.php">
+  First name: <input type="text" name="fname" value="Donald"><br>
+  Last name: <input type="text" name="lname" value="Duck"><br><br>
+  <input type="text" name="valor" value="Pon los numeros de los recuadros....."><br>
+  <input type="submit" value="Submit">
+
+</form> 
+
+<p>Click "Try it" to display the value of each element in the form.</p>
+
+<button onclick="myFunction()">Try it</button>
+<b>saldkjf</b>
+<p onmouseover="cambio(this)" onmouseout="cambio2(this)">Ponte ecima de mi</p>
+
+<p id="demo"></p>
+
+<script>
+  function cambio(obj){
+   obj.innerHTML = "Estas encima de mi";
+   //obj.innerHTML = cajas(1);
+}
+function cambio2(obj){
+  obj.innerHTML = "Ponte en cima de mi";
+}
+function myFunction() {
+    var x = document.forms["frm1"];
+    var text = "";
+    var i;
+    var blo = "<div class=blo></div>"
+    for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value + "<br>";
+        //text += "<div class=blo></div>";
+    }
+    text += "esto mola<br>";
+    text += "<b>esto mola</b>";
+    var x = x.elements[2].value;
+  //var y = 10;
+  //document.getElementById("blo").style.width = y;//porque esto no sirve
+  var aux = " ";
+  for(var i = 0; i < x; i++){
+    aux += "<p>"; 
+    for(var e = 0; e < x; e++){
+          aux +=  blo;
+    }
+    aux += "</p>";
+  }
+    document.getElementById("demo").innerHTML = text;
+    document.getElementById("cajas").innerHTML = aux;
+}
+function c(event){
+   x=event.clientX;
+  y=event.clientY;
+ var blo = "<div class=blo></div>"
+ document.getElementById("x").value = x;
+ document.getElementById("y").value = y;
+ for(var i = 0; i < x; i++){
+    aux += aux + blo;
+  }
+document.getElementById("cajas").innerHTML = aux;
+}
+
+</script>
+
+</body>
+</html>
