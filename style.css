@@ -14,7 +14,7 @@
 
 			}
 			body{
-			background: url("https://preview.ibb.co/kXwV3m/Sin_nombre.png");/*Esto se quita para editar para poder ver la estructura de html*/
+			background: url("back.png");/*Esto se quita para editar para poder ver la estructura de html*/
 			}
 			ul, ol {
 				list-style:none;
@@ -22,6 +22,7 @@
 			.nav{
 				margin-left: 30%;
 				display: block;
+				padding: 1%;
 			}
 			.nav > li {
 				float:left;
