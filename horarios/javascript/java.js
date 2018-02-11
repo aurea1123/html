@@ -30,7 +30,7 @@ var aux = " ";
 var x = 10;
 for(var i = 0; i < x; i++){
 aux += "<br>";
-for(var i = 0; i < x; i++){
+for(var e = 0; e < x; e++){
 aux += "<div id=blo></div>";
 }
 }
