@@ -5,7 +5,7 @@ for (var i = 0; i < x; i++) {
 }
 aux += "</ul>";
 document.getElementById("menu").innerHTML = aux;
-var aux = "<ul class=hora>";
+var aux = "<ul class=menu>";
 var x = 2;
 var hora = ["Barcelona", "Ripoll"];
 var dias =["Dilluns", "Dimarts", "Dimecres", "Dijous", "Divenderes", "Disapte", "Diumenge"];
