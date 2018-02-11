@@ -26,3 +26,12 @@ for (var i = 0; i < x; i++) {
 }
 aux += "</ul>";
 document.getElementById("hora").innerHTML = aux;
+var aux = " ";
+var x = 10;
+for(var i = 0; i < x; i++){
+aux += "<br>";
+for(var i = 0; i < x; i++){
+aux += "<div id=blo></div>";
+}
+}
+document.getElementById("cajas").innerHTML = aux;

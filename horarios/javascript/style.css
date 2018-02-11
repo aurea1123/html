@@ -13,10 +13,14 @@ background-color: #000;
 ul.hora{
 font-size: 200%;
 background-color: #FFF;
-text-color: white; 
+/*text-color: white; */
 }
 iframe{
 width: 100%;
 height: 100%;
 }
-
+blo{
+background-color: #FFF;
+width: 1%;
+height: 1%;
+}
