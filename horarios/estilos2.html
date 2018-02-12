@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<title>html, javascript, css</title>
+	<script>
+		function Prueva1(){
+		document.getElementById("Web2").src = "Index2.html";	//esto tiene que ser en entre comillas
+		document.getElementById("web").innerHTML = "Eres un capullo";
+		//document.write("Esto es una cagada");
+	}
+	function Prueva2(){
+		document.getElementById("Web2").src = "../pruevas.html"
+		document.getElementById("web").innerHTML = "Estas bien!!!!!!!!"
+	}
+
+	</script>
+	</head>
+<body>
+<ul>
+	<li>Index<li>
+	<li><a href="#" onclick="Prueva1()" src="">Prueva1</a><li>
+	<li><a href="#" onclick="Prueva2()" src="">Prueva1</a><li>
+</ul>
+<iframe id="Web2"></iframe>
+<p id="web">hola</p>
+<p class="mas">Mayusculas</p>
+</body>
+</html>

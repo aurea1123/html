@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<title>html, javascript, css</title>
+	<script>
+		function Prueva1(){
+		document.getElementById("Web2").src = "estilos2.html";	
+		document.getElementById("web").innerHTML = "Eres un capullo";
+		//document.write("Esto es una cagada");
+	}
+	 function cambio(obj){
+   obj.innerHTML = "Estas encima de mi";
+   //obj.innerHTML = cajas(1);
+}
+function cambio2(obj){
+  obj.innerHTML = "Ponte en cima de mi";
+}
+
+	</script>
+	</head>
+<body>
+<ul>
+	<li>Index<li>
+	<li><a href="#" onclick="Prueva1()" onmouseover="cambio(this)" onmouseout="cambio2(this)">Prueva1</a><li>
+</ul>
+<iframe id="Web2" src=""></iframe>
+<p id="web">hola</p>
+</body>
+</html>
