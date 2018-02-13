@@ -1,0 +1,111 @@
+.container{
+	display: table;
+	
+	width: 70%;
+	margin: auto;
+}
+header{
+	
+	position: relative;
+	background-color:  blue;
+	color: white;
+	display: table;
+	width: 100%;
+}
+.head{
+ 	display: table-cell;
+}
+li{
+	display: inline-block;
+	float: right;
+	margin-right: 10px;
+	color: white;
+}
+ul.head{
+	display: inline-block;
+}
+
+section.intro{
+	vertical-align: middle;
+	display: table-row;
+	vertical-align: middle;
+	width: 100%; 
+	background-color: #dedede;
+	/*Falta hacer todo lo del color a demas del vertical aling*/
+}
+h2.intro{
+	margin-top: 20%;
+	text-align: center; 
+	vertical-align: middle;
+}
+p.intro{
+	margin: auto;
+	text-align: center;
+	height: 150px;
+}
+section.parrafos{
+	
+	display: table-row;
+	display: table;
+	position: relative;
+}
+p.p1{
+	
+	display: table-cell;
+}
+p.p2{
+	
+	display: table-cell;
+}
+p.p3{
+	
+	display: table-cell;
+}
+div.gallery{
+	
+	display: table;
+	width: 100%;
+}
+div.thumail{
+	
+	display: table-cell;
+}
+section.banner{
+	display: table-row;
+	text-align: right;
+	vertical-align: middle;
+	background-color: blue;
+	height: 20%;
+}
+h2.banner{
+	position: relative;
+	display: block;
+}
+p.banner{
+	position: relative;
+	display: block;
+}
+section.info{
+	display: table-row;
+	display: table;
+	text-align: center;
+}
+article.info{
+	display: table-cell;
+	
+}
+footer{
+	width: 100%;
+	display: table;
+	margin: auto;
+	text-align: center;
+	background-color: #dedede;
+	
+}
+.copyright{
+	
+	text-align: center;
+	width: 100%;
+	display: table-row;
+	background-color: #fef;
+}

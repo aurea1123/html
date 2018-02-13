@@ -3,14 +3,14 @@ div.container{
 	margin: 2%;
 	margin-left: 5%;
 	margin-right: 5%;
-	background-color: red;
+	background-color: #58FAF4;
 }
 li{
 display: inline-block;
-background-color: red;
+background-color: #58FAF4;
 }
 header{
-background-color: red;
+background-color: #58FAF4;
 display: block;
 position: relative;
 height: 10%;
@@ -20,15 +20,16 @@ nav{
 	display: inline-block;
 	position: relative;
 float: right;
-background-color: red;
+background-color: #58FAF4;
 }
 h1{
 	display: inline-block;
 	position: relative;
 float: left;
-background-color: red;
+background-color: #58FAF4;
 }
 .intro{
+	margin: 0px;
 	position: relative;
 margin-top: 5%;
 background-color: blue;
@@ -70,7 +71,7 @@ position: relative;
 text-align: right;
 margin-bottom: 10%;
 margin-top: 10%;
-background-color: #ccc;
+background-color: #58FAF4;
 height: 100%;
 }
 article.info{
