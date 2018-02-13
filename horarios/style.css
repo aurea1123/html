@@ -1,9 +1,13 @@
 div.container{
 	position: absolute;
 	margin: 2%;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: red;
 }
 li{
 display: inline-block;
+background-color: red;
 }
 header{
 background-color: red;
@@ -16,11 +20,13 @@ nav{
 	display: inline-block;
 	position: relative;
 float: right;
+background-color: red;
 }
 h1{
 	display: inline-block;
 	position: relative;
 float: left;
+background-color: red;
 }
 .intro{
 	position: relative;
@@ -31,8 +37,9 @@ h2.intro, p.intro{
 text-align: center;
 }
 .parrafos{
-	position: relative;
+position: relative;
 display: inline-block;
+background-color: white;
 
 }
 .p1{
@@ -52,6 +59,7 @@ display: inline-block;
 }
 .gallery{
 	position: relative;
+	background-color: white;
 }
 .thumail{
 	display: inline-block;
@@ -64,4 +72,24 @@ margin-bottom: 10%;
 margin-top: 10%;
 background-color: #ccc;
 height: 100%;
+}
+article.info{
+display: inline-block;
+float: left;
+text-align: center;
+width: 50%;
+background-color: white;
+}
+footer, .copyright{
+background-color: #ccc;
+}
+footer{
+padding: 1%;
+text-align: center;
+}
+.button{
+background-color: #ccc;
+}
+.copyright{
+background-color: #fcc;
 }
