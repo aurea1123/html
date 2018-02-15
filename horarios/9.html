@@ -1,0 +1,563 @@
+<!Doctype>
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	.tabla{
+		display: table;
+		margin: auto;
+		padding: 2%;
+	}
+	.filas{
+		display: table-row;
+	}
+	.col{
+		display: table-cell;
+		
+	}
+	footer div{
+		display: table-cell;
+	}
+	footer{
+		display: table-row;
+	}
+	@media screen and (max-width: 320px){
+			.filas{
+			background-color: green;
+		}
+		h1{
+			background-color: blue;
+			width: 100%;
+		}
+		header{
+			width: 100%;
+			background-color: blue;
+		}
+		.pek{
+			margin-top: 200%;
+		}
+	}
+	
+
+</style>
+<head>
+	<title>MOdificar en base a quien lo vea</title>
+</head>
+<div class="tabla">
+<header class="filas">
+	<div class="tabla">
+		<!--Esto es lo del arbol -->
+		<div style="z-index: -1">
+		<form style="display: table-footer-group;">
+  <select id="tree-multi">
+    <option value="2">Multiplicity: 2</option>
+    <option value="3">Multiplicity: 3</option>
+    <option value="4">Multiplicity: 4</option>
+    <option value="5" selected>Multiplicity: 5</option>
+    <option value="6">Multiplicity: 6</option>
+    <option value="7">Multiplicity: 7</option>
+  </select>
+  <br/>
+  <label for="tree-ratio">Ratio</label>
+  <input id="tree-ratio" type="range" min="0" max="1" value="0.6" step="0.01"/>
+</form>
+<!-- Termina aqui -->
+<div class="tree-container">
+	<canvas id="tree" width="90" height="90" style="z-index: -1"></canvas>
+</div>
+</div>
+	<h1 class="col" style="position: fixed;">Hola mundo cabron</h1>
+</div>
+</header>
+<body class="filas">
+	<canvas id="world" style="z-index: -1"></canvas>
+
+	<div class="tabla pek">
+	<div class="filas pek">
+<article class="col">
+	<p>
+		
+		Valor: windows-xp | windows-vista | windows-win7 | windows-win8
+Medio: media/visual
+Acepta prefijos min/max: no
+
+Indica que sistema operativo esta en uso actualmente. Actualmente solo es implementado en Windows. Sus posibles valores son:
+
+    windows-xp
+    windows-vista
+    windows-win7
+    windows-win8
+    windows-win10
+
+Esto se hace para permitir a los skins y a algunos códigos funcionen mejor con el sistema operativo en el que se ejecutan.
+	</p>
+</article>
+<article class="col">
+	<p>
+		Valor: windows-xp | windows-vista | windows-win7 | windows-win8
+Medio: media/visual
+Acepta prefijos min/max: no
+
+Indica que sistema operativo esta en uso actualmente. Actualmente solo es implementado en Windows. Sus posibles valores son:
+
+    windows-xp
+    windows-vista
+    windows-win7
+    windows-win8
+    windows-win10
+
+Esto se hace para permitir a los skins y a algunos códigos funcionen mejor con el sistema operativo en el que se ejecutan.
+	</p>
+</article>
+</div>
+<div class="filas">
+<article class="col">
+	<p>
+		Valor: windows-xp | windows-vista | windows-win7 | windows-win8
+Medio: media/visual
+Acepta prefijos min/max: no
+
+Indica que sistema operativo esta en uso actualmente. Actualmente solo es implementado en Windows. Sus posibles valores son:
+
+    windows-xp
+    windows-vista
+    windows-win7
+    windows-win8
+    windows-win10
+
+Esto se hace para permitir a los skins y a algunos códigos funcionen mejor con el sistema operativo en el que se ejecutan.
+	</p>
+</article>
+<article class="col">
+	<p>
+		Valor: windows-xp | windows-vista | windows-win7 | windows-win8
+Medio: media/visual
+Acepta prefijos min/max: no
+
+Indica que sistema operativo esta en uso actualmente. Actualmente solo es implementado en Windows. Sus posibles valores son:
+
+    windows-xp
+    windows-vista
+    windows-win7
+    windows-win8
+    windows-win10
+
+Esto se hace para permitir a los skins y a algunos códigos funcionen mejor con el sistema operativo en el que se ejecutan.
+	</p>
+</article>
+</div>
+<div class="filas">
+<article class="col">
+	<p>
+		Valor: windows-xp | windows-vista | windows-win7 | windows-win8
+Medio: media/visual
+Acepta prefijos min/max: no
+
+Indica que sistema operativo esta en uso actualmente. Actualmente solo es implementado en Windows. Sus posibles valores son:
+
+    windows-xp
+    windows-vista
+    windows-win7
+    windows-win8
+    windows-win10
+
+Esto se hace para permitir a los skins y a algunos códigos funcionen mejor con el sistema operativo en el que se ejecutan.
+	</p>
+</article>
+<article class="col">
+	<p>
+		Valor: windows-xp | windows-vista | windows-win7 | windows-win8
+Medio: media/visual
+Acepta prefijos min/max: no
+
+Indica que sistema operativo esta en uso actualmente. Actualmente solo es implementado en Windows. Sus posibles valores son:
+
+    windows-xp
+    windows-vista
+    windows-win7
+    windows-win8
+    windows-win10
+
+Esto se hace para permitir a los skins y a algunos códigos funcionen mejor con el sistema operativo en el que se ejecutan.
+	</p>
+</article>
+</div>
+</article>
+</div>
+<footer>
+	<div>Uno</div>
+	<div>Dos</div>
+</footer>
+
+</body>
+</div>
+</div>
+<script type="text/javascript">
+(function() {
+  var H, W, animationCurve, canvas, colorStops, getColors, i, j, k, l, len, lut, maxDraws, numDraws, pMax, rand, ref, ref1, render, row, speed, step, styles, transformations, v, xRange, xSpan, yRange, ySpan;
+
+  speed = 1;
+
+  W = 350;
+
+  H = 500;
+
+  transformations = [
+    [
+      (function(x,
+      y) {
+        return 0;
+      }),
+      (function(x,
+      y) {
+        return 0.16 * y;
+      }),
+      1
+    ],
+    [
+      (function(x,
+      y) {
+        return 0.2 * x - 0.26 * y;
+      }),
+      (function(x,
+      y) {
+        return 0.23 * x + 0.22 * y + 1.6;
+      }),
+      7
+    ],
+    [
+      (function(x,
+      y) {
+        return -0.15 * x + 0.28 * y;
+      }),
+      (function(x,
+      y) {
+        return 0.26 * x + 0.24 * y + 0.44;
+      }),
+      7
+    ],
+    [
+      (function(x,
+      y) {
+        return 0.85 * x + 0.04 * y;
+      }),
+      (function(x,
+      y) {
+        return -0.04 * x + 0.85 * y + 1.6;
+      }),
+      85
+    ]
+  ];
+
+  maxDraws = 200000;
+
+  xRange = [-2.182, 2.6558];
+
+  yRange = [0, 9.9983];
+
+  canvas = document.getElementById("world");
+
+  canvas.width = W;
+
+  canvas.height = H;
+
+  styles = {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    margin: `-${~~(H / 2)}px 0 0 -${~~(W / 2)}px`
+  };
+
+  colorStops = [[0, "rgba(255,255,255,1)"], [1000, "rgba(253,253,52,0.6)"], [5000, "rgba(0,171,56,0.7)"], [10000, "rgba(168,210,110,0.7)"], [20000, "rgba(246,243,27,0.6)"], [40000, "rgba(138,215,39,0.7)"], [65000, "rgba(243,205,8,0.5)"], [90000, "rgba(150,204,104,0.4)"], [125000, "rgba(137,230,101,0.5)"], [150000, "rgba(246,243,27,0.5)"], [190000, "rgba(255,255,255,0.8)"]];
+
+  animationCurve = function(frame) {
+    if (frame < 1000) {
+      return 25;
+    }
+    if (frame < 5000) {
+      return 50;
+    }
+    if (frame < 10000) {
+      return 75;
+    }
+    if (frame < 20000) {
+      return 100;
+    }
+    if (frame < 40000) {
+      return 150;
+    }
+    if (frame < 65000) {
+      return 250;
+    }
+    if (frame < 90000) {
+      return 400;
+    }
+    if (frame < 150000) {
+      return 600;
+    }
+    if (frame < 190000) {
+      return 400;
+    }
+    if (frame < 200000) {
+      return 100;
+    }
+  };
+
+  lut = {};
+
+  numDraws = 0;
+
+  pMax = 0;
+
+  for (j = 0, len = transformations.length; j < len; j++) {
+    row = transformations[j];
+    for (i = l = ref = pMax, ref1 = row[2] + pMax - 1; ref <= ref1 ? l <= ref1 : l >= ref1; i = ref <= ref1 ? ++l : --l) {
+      lut[i] = [row[0], row[1]];
+    }
+    pMax += row[2];
+  }
+
+  getColors = function() {
+    var colors;
+    colors = colorStops.slice();
+    return function() {
+      var colorStop;
+      if (!(colors[0] && numDraws >= colors[0][0])) {
+        return;
+      }
+      colorStop = colors.shift();
+      return ctx.fillStyle = colorStop[1];
+    };
+  };
+
+  for (k in styles) {
+    v = styles[k];
+    canvas.style[k] = v;
+  }
+
+  window.ctx = canvas.getContext("2d");
+
+  xSpan = xRange[1] - xRange[0];
+
+  ySpan = yRange[1] - yRange[0];
+
+  window.updateColor = getColors();
+
+  render = function() {
+    var drawsPerFrame, f, iter, m, ref2, x, y;
+    if (numDraws > maxDraws) {
+      return;
+    }
+    updateColor();
+    drawsPerFrame = speed * animationCurve(numDraws);
+    for (i = m = 0, ref2 = drawsPerFrame; 0 <= ref2 ? m <= ref2 : m >= ref2; i = 0 <= ref2 ? ++m : --m) {
+      iter = 0;
+      [x, y] = [rand(xRange[0], xRange[1]), rand(yRange[0], yRange[1])];
+      while (iter++ < 50) {
+        f = lut[~~rand(0, pMax)];
+        [x, y] = [f[0](x, y), f[1](x, y)];
+      }
+      x = W * (x - xRange[0]) / xSpan;
+      y = H * (1 - y / ySpan);
+      ctx.fillRect(x, y, 1, 1);
+    }
+    return numDraws += drawsPerFrame;
+  };
+
+  window.onclick = function() {
+    numDraws = 0;
+    window.updateColor = getColors();
+    return ctx.clearRect(0, 0, W, H);
+  };
+
+  rand = function(a, b) {
+    return (b - a) * Math.random() + a;
+  };
+
+  window.requestAnimationFrame || (window.requestAnimationFrame = (function() {
+    var len1, m, prefix, r, ref2;
+    ref2 = ['webkit', 'moz', 'ms', 'o'];
+    for (m = 0, len1 = ref2.length; m < len1; m++) {
+      prefix = ref2[m];
+      if (r = window[`${prefix}RequestAnimationFrame`]) {
+        return r;
+      }
+    }
+    return function(callback) {
+      return window.setTimeout(callback, 1000 / 60);
+    };
+  })());
+
+  (step = function() {
+    return requestAnimationFrame(step) && render();
+  })();
+
+}).call(this);
+//este es para el segundo fractal
+var createTree = function(){
+	
+	"use strict";
+
+	var draw = (function(){ 
+		
+		var c = document.getElementById("tree").getContext("2d");
+		var canvasWidth = 90;
+		var canvasHeight = 90;
+		var extent = 3.5; //arbitrary x scale
+		var nGen = 4;
+	
+		return function(multi, r, theta){
+			
+			var xScale = (function(){
+				var xRange = extent;
+				var width = canvasWidth;
+				var c = width/2;
+				var m = width/xRange;
+				
+				return function(val){
+					return Math.round(m*val + c);	
+				};
+				
+			})();
+			
+			var yScale = (function(){
+				var height = canvasHeight;
+				var width = canvasWidth;
+				var aspect = width/height;
+				var yRange = extent/aspect;
+				var m = -height/yRange;
+				var c = -(m*extent);
+				
+				return function(val){
+					return Math.round(m*val + c);	
+				};
+					
+			})();
+			
+			var branchAngles = [];
+			
+			(function(){
+				var branchSep = (2*theta)/(multi-1);
+				for(var i=0; i<multi; i++){
+					branchAngles.push(-theta + i*branchSep);	
+				}
+			})();
+			
+			c.clearRect(0, 0, canvasWidth, canvasHeight);
+			c.beginPath();
+			c.strokeStyle = "rgb(123,46,0)";
+			var xInit = 0;
+			var yInit = 1;
+			var rotInit = 0;
+			
+			var thisGen = [{xEnd:xInit, yEnd:yInit, rot:rotInit}];
+			c.moveTo(xScale(0), yScale(0));
+			c.lineTo(xScale(xInit), yScale(yInit));
+			var changedCol = false;
+			
+			for(var i=0; i<nGen; i++){
+				
+				var lastGen = thisGen;
+				var nLastGen = lastGen.length;
+				thisGen = [];
+				thisGen.length = multi*nLastGen;
+				
+				var notLastGen = i<(nGen-1) ? true : false;
+				
+				var	len = Math.pow(r, i+1);
+				
+				if(!changedCol && i>2){
+					changedCol = true;
+					c.stroke();
+					c.beginPath();
+					c.strokeStyle = "#308014";//"green";
+				}
+				
+				
+				for(var j=0; j<nLastGen; j++){
+					
+					var parent = lastGen[j];
+					var xStart = parent.xEnd;
+					var yStart = parent.yEnd;
+					var rotParent = parent.rot;
+					
+					for(var k=0; k<multi; k++){
+						var rot = rotParent + branchAngles[k];
+						var xEnd = xStart + len*Math.sin(rot);
+						var yEnd = yStart + len*Math.cos(rot);
+						
+						c.moveTo(xScale(xStart), yScale(yStart));
+						c.lineTo(xScale(xEnd), yScale(yEnd));
+						
+						if(notLastGen){
+							thisGen[j*multi+k] = {
+								xEnd: xEnd,
+								yEnd: yEnd,
+								rot: rot
+							};
+						}
+					}
+					
+				}
+				
+			}
+			
+			c.stroke();
+			
+			
+		};
+	
+	})();
+	
+	var multiplicity;
+ 	var ratio;
+	
+	//set multiplicity and ratio
+	(function(){
+		var select =  document.getElementById("tree-multi");
+		var setMultiplicity = function(){multiplicity = parseInt(select.value, 10);};
+		select.addEventListener("change", function(){setMultiplicity();});
+		setMultiplicity();
+		
+		var slider = document.getElementById("tree-ratio");
+		var setRatio = function(){ratio = parseFloat(slider.value);};
+		slider.addEventListener("input", function(){setRatio();});
+		setRatio();
+	})();
+	
+
+
+	var animationStartTime;
+	var requestId;
+
+	
+	var startAnimation = function(){
+		animationStartTime = window.performance.now();
+		requestId = window.requestAnimationFrame(animate);
+	};
+	
+	var animate = function animate(time){
+    	requestId = window.requestAnimationFrame(animate);
+		var timeDifference = time - animationStartTime;
+		var angleDeg = timeDifference/25;
+		var angle = angleDeg*(Math.PI/180);
+		draw(multiplicity, ratio, angle);
+	};
+	
+	var stopAnimation = function(){
+		if(requestId){
+			window.cancelAnimationFrame(requestId);
+		}
+		requestId = undefined;
+	};
+	
+
+	return Object.freeze({
+		startAnimation: function(){startAnimation(); return this;},
+		stopAnimation: function(){stopAnimation(); return this;},
+	});
+	
+};
+var tree = createTree();
+tree.startAnimation();
+</script>
+</html>
