@@ -24,3 +24,13 @@ background-color: #FFF;
 width: 10px;
 height: 10px;
 }
+iframe{
+	height: 400px;
+	padding: 1%;
+}
+p{
+	background-color: white;
+}
+body a{
+	background-color: white;
+}

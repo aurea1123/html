@@ -25,13 +25,28 @@ for (var i = 0; i < x; i++) {
 	aux += "<br>"
 }
 aux += "</ul>";
-document.getElementById("hora").innerHTML = aux;
-var aux = " ";
-var x = 10;
+
+
+var z = " ";
+var x = 2;
+var tit = ["Documentacion General ", "Documentacion de javascript"];
+var url2 = ["http://w3schools.com/", "http://www.manualdejavascript.com/section/manualdejavascript/"];
+for(var i = 0; i < x ;i++){
+	z += "<h2><p>" + tit[i] + "</p></h2>";
+	z += "<a href=" + url2[i] + "><iframe src=" + url2[i] + "></iframe></a>";
+	z += "<a href=" + url2[i] + "><p>Link</p></a>";
+}
+
+var q = " ";
+var x = 1;
 for(var i = 0; i < x; i++){
-aux += "<br>";
+q += "<br>hola";
 for(var e = 0; e < x; e++){
-aux += "<div id=blo></div>";
+q += "<div id=blo></div>";
 }
 }
-document.getElementById("cajas").innerHTML = aux;
+
+document.getElementById("url").innerHTML = z;
+document.getElementById("cajas").innerHTML = q;
+document.getElementById("hora").innerHTML = aux;
+
