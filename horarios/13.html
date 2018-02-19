@@ -1,0 +1,246 @@
+<!Doctype>
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+/*Esto es para el menu*/
+body{
+	background-color:  #c7ecf0 ;
+}
+.tit{
+	position: fixed;
+	height: 30%;
+	top: 0;
+}
+
+#menu img{
+	height: 30%;
+	width: 30%;
+	display: inline-block;
+}
+#menu nav ul li {
+	display: none;
+	text-decoration: none;
+	margin: auto;
+}
+#menu nav ul:hover > li{
+	display: block;
+	background-color:  #c7ecf0 ;
+	padding: 1%;
+}
+.flex{
+	margin-top:  50%;
+}
+
+
+@media screen and (max-width: 900px){
+.flex{
+	background-image: url("https://pre00.deviantart.net/1e68/th/pre/i/2017/291/1/a/just_monika_by_quantumglados-dbqzfsn.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50%; 
+}
+
+.col{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+body{
+
+	margin: 0;
+}
+.tit{
+		background-image: url("https://img00.deviantart.net/de2c/i/2017/053/9/6/yuri_plisetsky__cabecera__by_michhhmelia1-dazx3b8.png");
+		background-size: auto;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: #fff;
+		width: 100%;
+		}
+		.flex .col:hover{
+	background-color: #c7ecf0;
+}
+	}
+
+@media screen and (min-width: 900px){
+	body{
+		margin: auto;
+	}
+	.flex{
+		display: flex;
+		
+		/*flex-direction: column;*/
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		flex-direction:  row;
+		height: 100%;
+		background-image: url("https://pre00.deviantart.net/1e68/th/pre/i/2017/291/1/a/just_monika_by_quantumglados-dbqzfsn.jpg");
+		background-size: 100% 100%;
+		margin-top: 20%; 
+	}
+	.col{
+		display: flex;
+		/*flex-direction: column;*/
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		flex-direction:  column;
+		height: 100%;
+		columns: 5;
+	}
+	.flex p{
+		display: flex;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: nowrap;
+		flex-direction: column-reverse;
+	}
+	.tit{
+		background-image: url("https://img00.deviantart.net/de2c/i/2017/053/9/6/yuri_plisetsky__cabecera__by_michhhmelia1-dazx3b8.png");
+		background-size: auto;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: #000;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		align-content: center;
+		flex-wrap: nowrap;
+		flex-direction: row;
+		width: 100%;
+		height: 20%;
+
+	}
+	.tit h1{
+	background-color: #c7ecf0;
+}
+	.fot{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}
+</style>
+<head>
+	<title>Disenyo flexible</title>
+</head>
+<body>
+	<div class="tit">
+	<h1>Hola mundo</h1>
+	<h1> asdf</h1>
+	<div id="menu">
+	<nav>
+		<ul>
+		<a href="#"><img src="https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn4.iconfinder.com%2Fdata%2Ficons%2Fuser-interface-33%2F80%2FHome-256.png&f=1" alt="boton" width="30%"></a>
+		<li><a href="#">Opecion1</a></li>
+		<li><a href="#">Opecion1</a></li>
+		<li><a href="#">Opecion1</a></li>
+		<li><a href="#">Opecion1</a></li>
+		<li><a href="#">Opecion1</a></li>
+		<li><a href="#">Opecion1</a></li>
+	</ul>
+	</nav>
+</div>
+</div>
+<div class="flex">
+	<div class="col">
+	<p>
+
+		<h2>1</h2>
+		Valor: windows-xp | windows-vista | windows-win7 | windows-win8
+
+	</p>
+	<div class="col">
+	<p>
+
+		<h2>1</h2>
+		Valor: windows-xp | windows-vista | windows-win7 | windows-win8
+
+	</p>
+</div>
+<div class="col">
+	<p>
+
+		<h2>1</h2>
+		Valor: windows-xp | windows-vista | windows-win7 | windows-win8
+
+	</p>
+</div>
+<div class="col">
+	<p>
+
+		<h2>1</h2>
+		Valor: windows-xp | windows-vista | windows-win7 | windows-win8
+
+	</p>
+</div>
+<div class="col">
+	<p>
+
+		<h2>1</h2>
+		Valor: windows-xp | windows-vista | windows-win7 | windows-win8
+
+	</p>
+</div>
+</div>
+<div class="col">
+	<p>
+		<h2>2</h2>
+		Valor: windows-xp | windows-vista | windows-win7 | windows-win8
+Medio: media/visual
+Acepta prefijos min/max: no
+
+Indica que sistema operativo esta en uso actualmente. Actualmente solo es implementado en Windows. Sus posibles valores son:
+
+    
+	</p>
+</div>
+<div class="col">
+	<p>
+		<h2>3</h2>
+		
+
+    
+Esto se hace para permitir a los skins y a algunos códigos funcionen mejor con el sistema operativo en el que se ejecutan.
+	</p>
+</div>
+	<div class="col">
+		<p>
+		<h2>5</h2>
+		
+
+    
+Esto se hace para permitir a los skins y a algunos códigos funcionen mejor con el sistema operativo en el que se ejecutan.
+	</p>
+	<p>
+		<h2>5</h2>
+		
+
+    
+Esto se hace para permitir a los skins y a algunos códigos funcionen mejor con el sistema operativo en el que se ejecutan.
+	</p>
+	<p>
+		<h2>5</h2>
+		
+
+    
+Esto se hace para permitir a los skins y a algunos códigos funcionen mejor con el sistema operativo en el que se ejecutan.
+	</p>
+	</div>
+</div>
+<div class="fot">
+	<h2>Este es mi fotter
+	</div>
+</body>
+<script type="text/javascript">
+</script>
+</html>

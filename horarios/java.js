@@ -26,5 +26,4 @@ for (var i = 0; i < x; i++) {
 }
 aux += "</ul>";
 document.getElementById("hora").innerHTML = aux;
-
 document.getElementById("cajas").innerHTML = "Funciona bien";

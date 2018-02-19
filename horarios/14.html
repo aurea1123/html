@@ -1,0 +1,188 @@
+<!Doctype>
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+/*Esto es para el menu*/
+body{
+	background-color:  #c7ecf0 ;
+}
+.tit{
+	position: fixed;
+	height: 30%;
+	top: 0;
+}
+
+#menu img{
+	height: 30%;
+	width: 30%;
+	display: inline-block;
+}
+#menu nav ul li {
+	display: none;
+	text-decoration: none;
+	margin: auto;
+}
+#menu nav ul:hover > li{
+	display: block;
+	background-color:  #c7ecf0 ;
+	padding: 1%;
+}
+@media screen and (max-width: 900px){
+.flex{
+	background-image: url("https://pre00.deviantart.net/1e68/th/pre/i/2017/291/1/a/just_monika_by_quantumglados-dbqzfsn.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	margin-top: 50%; 
+}
+
+.col{
+	display: flex;
+	flex-direction: column;
+}
+body{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+}
+.tit{
+		background-image: url("https://img00.deviantart.net/de2c/i/2017/053/9/6/yuri_plisetsky__cabecera__by_michhhmelia1-dazx3b8.png");
+		background-size: auto;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: #fff;
+		width: 100%;
+		}
+		.flex .col:hover{
+	background-color: #c7ecf0;
+}
+	}
+
+@media screen and (min-width: 900px){
+	body{
+		margin: auto;
+	}
+	.flex{
+		display: flex;
+		/*flex-direction: column;*/
+		flex-wrap: nowrap;
+		height: 100%;
+		background-image: url("https://pre00.deviantart.net/1e68/th/pre/i/2017/291/1/a/just_monika_by_quantumglados-dbqzfsn.jpg");
+		background-size: 100% 100%;
+		margin-top: 10%; 
+	}
+	.col{
+		display: flex;
+		/*flex-direction: column;*/
+		flex-wrap: nowrap;
+		flex-direction:  column;
+		height: 100%;
+		columns: 5;
+	}
+	.flex p{
+		display: flex;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: nowrap;
+		flex-direction: column-reverse;
+	}
+	.tit{
+		
+		background-size: auto;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: #000;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		align-content: center;
+		flex-wrap: nowrap;
+		flex-direction: row;
+		width: 100%;
+		height: 20%;
+
+	}
+	.tit h1{
+	background-color: #c7ecf0;
+}
+	.fot{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	aside{
+		width: 20%;
+		margin-top: 0; 
+	}
+	article{
+		width: 50%;
+	}
+	nav.col{
+		width: 25%;
+	}
+}
+</style>
+<head>
+	<title>Disenyo flexible</title>
+</head>
+<body>
+	<div class="tit">
+	<h1>Hola mundo</h1>
+	<h1> asdf</h1>
+</div>
+<div class="flex">
+<aside class="col">
+	<p>
+		<h2>Acerda de</h2>
+		Valor: windows-xp | windows-vista | windows-win7 | windows-win8
+Medio: media/visual
+Acepta prefijos min/max: no
+
+Indica que sistema operativo esta en uso actualmente. Actualmente solo es implementado en Windows. Sus posibles valores son:
+
+    
+	</p>
+</aside>
+<article class="col">
+		<p>
+		<h2>5</h2>
+		
+
+    
+Esto se hace para permitir a los skins y a algunos códigos funcionen mejor con el sistema operativo en el que se ejecutan.
+	</p>
+	<p>
+		<h2>5</h2>
+		
+
+    
+Esto se hace para permitir a los skins y a algunos códigos funcionen mejor con el sistema operativo en el que se ejecutan.
+	</p>
+	<p>
+		<h2>5</h2>
+		
+
+    
+Esto se hace para permitir a los skins y a algunos códigos funcionen mejor con el sistema operativo en el que se ejecutan.
+	</p>
+	<div id="para"><h1>asdklfjñasdlfjk</h1></div>
+</article>
+<nav class="col">
+		<h2>5</h2>
+		
+
+    
+Esto se hace para permitir a los skins y a algunos códigos funcionen mejor con el sistema operativo en el que se ejecutan.
+	</p>
+	<p>Enlace 1</p>
+	</div>
+</nav>
+</div>
+<div class="fot">
+	<h2>Este es mi fotter
+	</div>
+	<script type="text/javascript" src="java2.js">
+	</script>
+</body>
+</html>

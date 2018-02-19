@@ -1,0 +1,32 @@
+div.social{
+	
+	width: 10%;
+	margin-left: 10%;
+	position: fixed;
+	transition: all 5000ms ease;
+}
+div.social  li:hover{
+	background-color: #0000;
+	padding: 10% 100%;
+
+}
+div.social li.face{
+	background-color: blue;
+	background-repeat: no-repeat;
+	background-image: url("SVG/face.svg")
+}
+div.social li.twit{
+	background-color: red;
+	background-repeat: no-repeat;
+	background-image: url("SVG/twit.svg")
+}
+div.social li.mail{
+	background-color: green;
+	background-repeat: no-repeat;
+	background-image: url("SVG/mail.svg")
+}
+div.social li.link{
+	background-color: blue;
+	background-repeat: no-repeat;
+	background-image: url("SVG/link.svg")
+}
