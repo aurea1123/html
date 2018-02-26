@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="style.css">
+<meta charset="utf-8" />
+<title>Hyperapido</title>
+</head>
+<div id="caj">
+<header>
+<div class="fil">
+<img src="r/i/logo.png" alt="boton">
+<nav>
+	<ul>
+		<a href="#"><li>Home</li></a>
+		<a href="#"><li>Home</li></a>
+		<a href="#"><li>Home</li></a>
+		<a href="#"><li>Home</li></a>
+	</ul>
+	</nav>
+	</div>
+	<br class="spa2">
+	<div class="col cen">
+	<h2>Lore ipsum asdf</h2>
+	<h3>Just for you</h3>
+	<a href="#"><div id="boto"> Download</div></a>
+	</div>
+	<br class="spa">
+</header>
+<body>
+<div class="col cen" id="ab">
+<h2>About</h2>
+<p>Lorem ipsum dolor sit amet, consecteteur. Cras ad. Proin id phasellus ipsum ve velit facilisis leo, porta adipiscing odio cursus. Morbi sociis orci elit malesuada vehicula vitae risus. A, vehicula sem, ac feugiat. Commodo elit curabitur rutrum, sociosqu dignissim leo. Class ve enim magna hendrerit. Magna nisl eni porta. Ullamcorper. Odio dolor integer auctor quam magna condimentum eni, elit erat dignissim auctor dis interdum gravida. Nostra fames venenatis hac sollicitudin magna. Velit. At bibendum cras vulputate purus. Nulla luctus lacus adipiscing habitant gravida consectetuer penatibus ornare. Tincidunt consectetuer parturient arcu. In. In quis scelerisque sem ve. Gravida. Eni, aliquet, eleifend cursus libero ad nulla torquent nisl dictumst pretium, amet eros.
+</p>
+<h2>Services</h2>
+<p>what we do?</p>
+</div>
+<div class="fil cen">
+<div class="col cen">
+<div id="ios"></div>
+<h2>ios app</h2>
+<p>Lorem ipsum dolor. Vestibulum cursus ante tincidunt sapien, imperdiet mi, aptent neque nulla. Nostra pede ultricies sit integer leo, vivamus nunc, pulvinar. Dapibus leo torquent curabitur sollicitudin vestibulum. Ve proin ac morbi ad. Tellus nibh quisque eu, nam proin, per etiam ornare feugiat integer turpis. Enim risus habitant nisi. Tortor odio. Urna id magna et velit et tempus sagittis amet, lectus. Curabitur adipiscing viverra odio porta aliquam ut ac phasellus laoreet. Quis, ipsum donec semper nunc viverra in. Risus per quam diam ipsum malesuada semper elementum. Condimentum cum, ad habitant. Mauris lobortis, eget, aenean at. Aenean inceptos hendrerit eget augue malesuada nascetur platea varius pretium, mi, dui erat cum. Malesuada. Quam massa mi mauris fringilla.
+</p>
+</div>
+<div class="col cen">
+<div id="ios"></div>
+<h2>ios app</h2>
+<p>Lorem ipsum dolor. Vestibulum cursus ante tincidunt sapien, imperdiet mi, aptent neque nulla. Nostra pede ultricies sit integer leo, vivamus nunc, pulvinar. Dapibus leo torquent curabitur sollicitudin vestibulum. Ve proin ac morbi ad. Tellus nibh quisque eu, nam proin, per etiam ornare feugiat integer turpis. Enim risus habitant nisi. Tortor odio. Urna id magna et velit et tempus sagittis amet, lectus. Curabitur adipiscing viverra odio porta aliquam ut ac phasellus laoreet. Quis, ipsum donec semper nunc viverra in. Risus per quam diam ipsum malesuada semper elementum. Condimentum cum, ad habitant. Mauris lobortis, eget, aenean at. Aenean inceptos hendrerit eget augue malesuada nascetur platea varius pretium, mi, dui erat cum. Malesuada. Quam massa mi mauris fringilla.
+</p>
+</div>
+<div class="col cen">
+<img src="r/i/b1.png" alt="b1">
+<h2>ios app</h2>
+<p>Lorem ipsum dolor. Vestibulum cursus ante tincidunt sapien, imperdiet mi, aptent neque nulla. Nostra pede ultricies sit integer leo, vivamus nunc, pulvinar. Dapibus leo torquent curabitur sollicitudin vestibulum. Ve proin ac morbi ad. Tellus nibh quisque eu, nam proin, per etiam ornare feugiat integer turpis. Enim risus habitant nisi. Tortor odio. Urna id magna et velit et tempus sagittis amet, lectus. Curabitur adipiscing viverra odio porta aliquam ut ac phasellus laoreet. Quis, ipsum donec semper nunc viverra in. Risus per quam diam ipsum malesuada semper elementum. Condimentum cum, ad habitant. Mauris lobortis, eget, aenean at. Aenean inceptos hendrerit eget augue malesuada nascetur platea varius pretium, mi, dui erat cum. Malesuada. Quam massa mi mauris fringilla.
+</p>
+</div>
+</div>
+<div id="ab2">
+<br class="spa">
+<div class="col cen">
+<h1>this .psd theme is abolutly free</h1>
+<p>Lorem ipsum dolor sit amet. Malesuada quis enim. Netus mi eros litora mi inceptos mauris, eget phasellus hymenaeos nunc. Aptent natoque. At cras habitant etiam mi. Non adipiscing id, volutpat iaculis montes at. Ullamcorper. Dolor montes taciti dignissim ridiculus amet erat ultricies felis. Suscipit lacus. Felis duis eros. Suspendisse. Dictum ornare, nibh fusce nisl ultricies. Laoreet duis nunc quis potenti diam, vulputate praesent semper adipiscing. Malesuada vehicula tortor cursus leo dapibus nascetur. Mi a nisi at. Facilisi.
+</p>
+<a href="#"><div id="boto2">Just dowload</div></a>
+</div>
+<br class="spa">
+</div>
+<br class="spa">
+<div class="col cen" id="#img">
+<img src="r/i/p-1.png" alt="p">
+<div class="fil cen">
+<img src="r/i/p-2.png" alt="">
+<img src="r/i/p-3.png" alt="">
+</div>
+<div class="fil cen">
+<img src="r/i/p-4.png" alt="">
+<img src="r/i/p-5.png" alt="">
+</div>
+</div>
+
+<div class="col cen">
+<h2>the team</h2>
+</div>
+<div class="fil cen">
+<div class="col cen">
+<img src="r/i/tm-1.png" alt="">
+<h2>Jhon Algo</h2>
+<p>Lorem ipsum dolor sit amet, consecteteur. Platea metus cum diam praesent cursus, taciti purus ad. Pretium nostra, sit vestibulum malesuada, quam dis felis dui morbi malesuada. Purus netus dolor convallis sit netus. Faucibus id, porta enim pharetra consequat a. Ipsum odio. Eget potenti netus cum dis ad nunc massa. Taciti habitant, curae. Ultricies eni, quis. Aliquam in, conubia enim, velit nisi ad netus convallis eleifend. Ut vitae taciti etiam. Consectetuer natoque neque amet urna interdum eros, leo fermentum proin est nisi. Rhoncus ligula vitae id habitant nullam, aenean.
+</p>
+</div>
+<div class="col cen">
+<img src="r/i/tm-2.png" alt="">
+<h2>Jhon Algo</h2>
+<p>Lorem ipsum dolor sit amet, consecteteur. Platea metus cum diam praesent cursus, taciti purus ad. Pretium nostra, sit vestibulum malesuada, quam dis felis dui morbi malesuada. Purus netus dolor convallis sit netus. Faucibus id, porta enim pharetra consequat a. Ipsum odio. Eget potenti netus cum dis ad nunc massa. Taciti habitant, curae. Ultricies eni, quis. Aliquam in, conubia enim, velit nisi ad netus convallis eleifend. Ut vitae taciti etiam. Consectetuer natoque neque amet urna interdum eros, leo fermentum proin est nisi. Rhoncus ligula vitae id habitant nullam, aenean.
+</p>
+</div>
+<div class="col cen">
+<img src="r/i/tm-3.png" alt="">
+<h2>Jhon Algo</h2>
+<p>Lorem ipsum dolor sit amet, consecteteur. Platea metus cum diam praesent cursus, taciti purus ad. Pretium nostra, sit vestibulum malesuada, quam dis felis dui morbi malesuada. Purus netus dolor convallis sit netus. Faucibus id, porta enim pharetra consequat a. Ipsum odio. Eget potenti netus cum dis ad nunc massa. Taciti habitant, curae. Ultricies eni, quis. Aliquam in, conubia enim, velit nisi ad netus convallis eleifend. Ut vitae taciti etiam. Consectetuer natoque neque amet urna interdum eros, leo fermentum proin est nisi. Rhoncus ligula vitae id habitant nullam, aenean.
+</p>
+</div>
+</div>
+</body>
+<footer>
+<div class="col cen">
+<h2>It's free</h2>
+<a href="#"><div id="boto2">Just dowload</div></a>
+</div>
+</footer>
+</div>
+</html>

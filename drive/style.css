@@ -1,0 +1,95 @@
+#caj{
+display: flex;
+flex-direction: column;
+}
+header{
+display: flex;
+flex-direction: column;
+background-image: url("r/i/bg.jpg");
+background-size: cover;
+}
+header p, header nav{
+display: flex;
+flex-direction: row;
+}
+header nav{
+	display: flex;
+  justify-content: right;
+  width: 100%;
+}
+header br.spa, br.spa2{
+margin-top: 14%;
+}
+header h1{
+padding: 1%;
+}
+header br{
+	padding: 1%;
+}
+header ul{
+border: 1px solid black;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	padding: 20%;
+justify-content: center;
+}
+header li{
+	color: white;
+	padding: 20%;
+	padding-left: 50%;
+border: 1px solid black;
+display: inline-block;
+}
+li{
+text-decoration: none;
+display: inline-block;
+color: black;
+}
+.col{
+display: flex;
+flex-direction: column;
+}
+.cen{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+br.spa{
+margin-top: 10%;
+}
+.fil{
+display: flex;
+flex-direction: row;
+}
+#ab p, .cen p{
+padding-left: 10%;
+padding-right: 10%;
+}
+#ab2{
+background-image: url("r/i/dow-bg.jpg");
+background-size: cover;
+height: 10000%;
+}
+footer{
+background-image: url("r/i/bg-3.jpg");
+}
+#img{
+width: 10%;
+}
+#ios{
+background-image: url("r/i/b1.png");
+background-size: contain;
+height: 120px;
+width: 120px;
+}
+#ios:hover{
+animation-name: back;
+animation-duration: 2s;
+background-image: url("r/i/b1-1.png");
+}
+@keyframes back {
+    from {background-image: url("r/i/b1.png");}
+    to {background-image: url("r/i/b1-1.png");}
+}
