@@ -27,7 +27,7 @@ header br{
 	padding: 1%;
 }
 header ul{
-border: 1px solid black;
+
 	display: flex;
 	align-items: center;
 	align-content: center;
@@ -38,8 +38,11 @@ header li{
 	color: white;
 	padding: 20%;
 	padding-left: 50%;
-border: 1px solid black;
+
 display: inline-block;
+}
+a{
+	text-decoration: none;
 }
 li{
 text-decoration: none;
@@ -92,4 +95,110 @@ background-image: url("r/i/b1-1.png");
 @keyframes back {
     from {background-image: url("r/i/b1.png");}
     to {background-image: url("r/i/b1-1.png");}
+}
+@media screen and (max-width: 900px) and (min-width: 500px){
+#img{
+	display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: auto;
+
+}
+#img2{
+	display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+#img3{
+	display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+}
+div.pers{
+	background-image: url("r/i/tm-3.png");
+	background-repeat: no-repeat;
+	height: 250px;
+	width: 100%;
+	z-index: 0;
+}
+div.pers2{
+	
+	position: relative;
+	background-repeat: no-repeat;
+	height: 200px;
+	width: 100%;
+	z-index: 2;
+}
+div.pers2 img{
+	display: none;
+}
+div.pers2:hover > img{
+
+	display: block;
+	animation-name: persona;
+	animation-duration:  1s;
+	animation-iteration-count: 1;
+	margin-left: 15%;
+	margin-top: 15%;
+}
+@keyframes persona{
+	from{	
+		margin-left: 0;
+		margin-top: 0;
+	}to{
+		margin-left: 15%;
+		margin-top: 15%;
+	}
+}
+/*Esta es por las media screeen*/
+@media screen and (min-width: 900px){
+#img{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+margin:auto;
+}
+#img2{
+
+}
+#img3{
+	
+}
+#img4{
+	display: flex;
+	flex-direction: column;
+}
+
+}
+@media screen and (max-width: 500px){
+	#img{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+margin:auto;
+}
+#img2{
+
+}
+#img3{
+	
+}
+#img img{
+	width: 500%;
+}
+#img4{
+	display: flex;
+	flex-direction: column;
+}
+.fil{
+	display: flex;
+	flex-direction: column;
+}
 }
